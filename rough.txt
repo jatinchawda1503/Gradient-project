@@ -1,8 +1,29 @@
-def d(x,y):
+def dif(x,y):
    if isinstance(x, float) | isinstance(x, int) & isinstance(y, float) | isinstance(y, int):
                 x0= 2*x*y - y**2
                 y0= x**2 - 2*x*y
                 z= [x0,y0]
                 print(z)
    else:
+        print("Only int or float allowed")
+
+
+
+
+        import sympy as sym
+from sympy import *
+x,y = sym.symbols('x y')
+eq = x**2*y-x*y**2
+
+dx = diff(eq,x)
+dy = diff(eq,y)
+
+
+def dif(x0,y0):
+    if isinstance(x0, float) | isinstance(x0, int) & isinstance(y0, float) | isinstance(y0, int):
+        sol_x=dx.evalf(2,subs={x: x0, y:y0})
+        sol_y = dy.evalf(2,subs={x: x0, y:y0})
+        sol = sol_x,sol_y
+        return sol
+    else:
         print("Only int or float allowed")
