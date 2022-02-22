@@ -27,3 +27,32 @@ def dif(x0,y0):
         return sol
     else:
         print("Only int or float allowed")
+
+
+
+# def dif():
+#    if isinstance(x, float) | isinstance(x, int) & isinstance(y, float) | isinstance(y, int):
+#                 x0= 2*x*y - y**2
+#                 y0= x**2 - 2*x*y
+#                 z= [x0,y0]
+#                 print( 'The Gradient function Coordinates [x0,y0] are:',z);
+#    else:
+#         print("Only int or float allowed")
+
+# print("Enter the values of Coordinates x and y ");
+# x, y = map(int, input().split());
+#
+# dif(x,y);
+
+
+# def _main_():
+#     print("Enter the values of Coordinates x and y ");
+#     x , y = map(float, input().split());
+#     if isinstance(x,(int, float)) & isinstance(y, (int, float)):
+#         print("Entered Coordinates are x and y " , [x ,y]);
+#         x0= 2*x*y - y**2
+#         y0= x**2 - 2*x*y
+#         z= [x0,y0]
+#         print( 'The Gradient function Coordinates [x0,y0] are:',z);
+#     else:
+#         print("Only int or float allowed")
